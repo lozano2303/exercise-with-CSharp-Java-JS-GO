@@ -22,7 +22,7 @@ namespace models
         // Método sin retorno
         public void ShowHours()
         {
-            Console.WriteLine("Horas desde el contacto: " + hours + "horas. Esta fase puede durar de uno a dos dias, dependiendo del hospedero.");
+            Console.WriteLine("Horas desde el contacto: " + hours + "horas. Esta fase puede durar de uno a dos dias, dependiendo de la persona infectada.");
         }
 
         // Función con retorno
