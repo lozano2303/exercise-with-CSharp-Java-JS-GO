@@ -34,7 +34,7 @@ class Program
         phase3.Reveal();
         Console.WriteLine("\n Tercera fase del hongo Cordyceps completada. \n");
 
-        Console.WriteLine("Fase 4: Clicker (infectado con ecolocalización) \n");
+        Console.WriteLine("Fase 4: Clicker (Chasqueador) \n");
         Clicker phase4 = new Clicker("Salt Lake City");
         phase4.Spread();
         Console.WriteLine(phase4.Behavior());

@@ -28,5 +28,23 @@ public class Main {
         System.out.println(phase3.isHidden());
         phase3.reveal();
         System.out.println("\nTercera fase del hongo Cordyceps completada.\n");
+
+        System.out.println("Fase 4: Clicker (Chasqueador)\n");
+        Clicker phase4 = new Clicker("Salt Lake City");
+        phase4.spread();
+        System.out.println(phase4.behavior());
+        phase4.emitSound();
+        System.out.println(phase4.getSound());
+        phase4.changeSound("¡Chas!");
+        System.out.println("\nCuarta fase del hongo Cordyceps completada.\n");
+
+        System.out.println("Fase 5: Bloater (gordinflón o hinchado)\n");
+        Bloater phase5 = new Bloater("Jackson");
+        phase5.spread();
+        System.out.println(phase5.behavior());
+        phase5.showResistance();
+        System.out.println(phase5.getResistance());
+        phase5.reduceResistance();
+        System.out.println("\nQuinta y última fase del hongo Cordyceps completada.\n");
     }
 }
