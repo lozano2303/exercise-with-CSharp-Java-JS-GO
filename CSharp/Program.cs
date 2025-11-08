@@ -44,13 +44,12 @@ class Program
         Console.WriteLine("\n Cuarta fase del hongo Cordyceps completada. \n");
 
         Console.WriteLine("Fase 5: Bloather (gordinflon o hinchado) \n");
-                // Fase 5
-        Bloater f5 = new Bloater("Jackson");
-        f5.Spread();
-        Console.WriteLine(f5.Behavior());
-        f5.ShowResistance();
-        Console.WriteLine(f5.GetResistance());
-        f5.ReduceResistance();
+        Bloater phase5 = new Bloater("Jackson");
+        phase5.Spread();
+        Console.WriteLine(phase5.Behavior());
+        phase5.ShowResistance();
+        Console.WriteLine(phase5.GetResistance());
+        phase5.ReduceResistance();
         Console.WriteLine("\n Quinta y última fase del hongo Cordyceps completada. \n");
     }
 }
