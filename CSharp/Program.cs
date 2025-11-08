@@ -26,12 +26,21 @@ class Program
 
         
         Console.WriteLine("Fase 3: Stalker (acechador sigiloso) \n");
-        Stalker f3 = new Stalker("Seattle");
-        f3.Spread();
-        Console.WriteLine(f3.Behavior());
-        f3.ActivateStealth();
-        Console.WriteLine(f3.IsHidden());
-        f3.Reveal();
+        Stalker phase3 = new Stalker("Seattle");
+        phase3.Spread();
+        Console.WriteLine(phase3.Behavior());
+        phase3.ActivateStealth();
+        Console.WriteLine(phase3.IsHidden());
+        phase3.Reveal();
         Console.WriteLine("\n Tercera fase del hongo Cordyceps completada. \n");
+
+        Console.WriteLine("Fase 4: Clicker (infectado con ecolocalización) \n");
+        Clicker phase4 = new Clicker("Salt Lake City");
+        phase4.Spread();
+        Console.WriteLine(phase4.Behavior());
+        phase4.EmitSound();
+        Console.WriteLine(phase4.GetSound());
+        phase4.ChangeSound("¡Chas!");
+        Console.WriteLine("\n Cuarta fase del hongo Cordyceps completada. \n");
     }
 }
