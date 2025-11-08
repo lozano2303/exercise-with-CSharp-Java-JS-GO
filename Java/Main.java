@@ -10,5 +10,23 @@ public class Main {
         System.out.println(phase1.getHours());
         phase1.resetHours();
         System.out.println("\nPrimera fase del hongo Cordyceps completada.\n");
+
+        System.out.println("Fase 2: Runner (corredor agresivo)\n");
+        Runner phase2 = new Runner("Pittsburgh");
+        phase2.spread();
+        System.out.println(phase2.behavior());
+        phase2.showAggression();
+        System.out.println(phase2.isAggressive());
+        phase2.calmDown();
+        System.out.println("\nSegunda fase del hongo Cordyceps completada.\n");
+
+        System.out.println("Fase 3: Stalker (acechador sigiloso)\n");
+        Stalker phase3 = new Stalker("Seattle");
+        phase3.spread();
+        System.out.println(phase3.behavior());
+        phase3.activateStealth();
+        System.out.println(phase3.isHidden());
+        phase3.reveal();
+        System.out.println("\nTercera fase del hongo Cordyceps completada.\n");
     }
 }
