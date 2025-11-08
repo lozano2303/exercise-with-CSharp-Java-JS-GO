@@ -1,10 +1,11 @@
-using System;
-
-namespace CSharp.models
+namespace models
 {
     public abstract class Cordyceps
     {
-        private string origin { get; set; }
+        // Atributo privado no nulo
+        private string origin = "";
+
+        // Propiedad pública con validación
         public string Origin
         {
             get { return origin; }
@@ -15,18 +16,19 @@ namespace CSharp.models
             }
         }
 
+        // Constructor que asigna un valor válido
         public Cordyceps(string origin)
         {
-            this.origin = origin;
+            Origin = origin;
         }
 
-        // Método común sin retorno
-        public void Propagar()
+        // Método sin retorno
+        public void Spread()
         {
-            Console.WriteLine($"El hongo se propaga desde: {Origin}");
+            Console.WriteLine("El hongo se propaga desde: " + Origin);
         }
 
-        // metodo abstracto
+        // Método abstracto con retorno
         public abstract string Behavior();
     }
 }

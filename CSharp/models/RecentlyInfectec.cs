@@ -1,25 +1,40 @@
-using System;
+using models;
 
-namespace CSharp.models
+namespace models
 {
     public class RecentlyInfected : Cordyceps
     {
-        private string TimeInfected { set; get; }
+        // Atributo privado
+        private int hours;
 
-        public RecentlyInfected(string origin, string timeInfected) : base(origin)
+        // Constructor
+        public RecentlyInfected(string origin) : base(origin)
         {
-            TimeInfected = timeInfected;
+            hours = 2;
         }
 
-        public string InfectedTime (string TimeInfected)
-        {
-            return "el tiempo de infeccion es de aproximadamente: " + TimeInfected;
-        }
-
+        // Método con retorno
         public override string Behavior()
         {
-            return "fase del cordyceps en la que aun hay conciencia";
+            return "En esta fase todavía es humano, esta es la primera etapa de la infeccion.";
         }
 
+        // Método sin retorno
+        public void ShowHours()
+        {
+            Console.WriteLine("Horas desde el contacto: " + hours + "horas. Esta fase puede durar de uno a dos dias, dependiendo del hospedero.");
+        }
+
+        // Función con retorno
+        public int GetHours()
+        {
+            return hours;
+        }
+
+        // Función sin retorno
+        public void ResetHours()
+        {
+            hours = 0;
+        }
     }
 }
