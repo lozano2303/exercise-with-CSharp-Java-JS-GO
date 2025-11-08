@@ -22,5 +22,16 @@ class Program
         phase2.ShowAggression();
         Console.WriteLine(phase2.IsAggressive());
         phase2.CalmDown();
+        Console.WriteLine("\n Segunda fase del hongo Cordyceps completada. \n");
+
+        
+        Console.WriteLine("Fase 3: Stalker (acechador sigiloso) \n");
+        Stalker f3 = new Stalker("Seattle");
+        f3.Spread();
+        Console.WriteLine(f3.Behavior());
+        f3.ActivateStealth();
+        Console.WriteLine(f3.IsHidden());
+        f3.Reveal();
+        Console.WriteLine("\n Tercera fase del hongo Cordyceps completada. \n");
     }
 }
