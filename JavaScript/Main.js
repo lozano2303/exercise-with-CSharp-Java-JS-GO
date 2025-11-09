@@ -2,6 +2,7 @@ import RecentlyInfected from './models/RecentlyInfected.js';
 import Runner from './models/Runner.js';
 import Stalker from './models/Stalker.js';
 import Clicker from './models/Clicker.js';
+import Bloater from './models/Bloater.js';
 
 console.log("Simulación de Cordyceps \n\nFase 1: Recently Infected (infectado reciente)\n");
 const phase1 = new RecentlyInfected("Boston");
@@ -38,3 +39,12 @@ phase4.emitSound();
 console.log(phase4.getSound());
 phase4.changeSound("¡Chas!");
 console.log("\nCuarta fase del hongo Cordyceps completada.\n");
+
+console.log("Fase 5: Bloater (gordinflón o hinchado)\n");
+const phase5 = new Bloater("Jackson");
+phase5.spread();
+console.log(phase5.behavior());
+phase5.showResistance();
+console.log(phase5.getResistance());
+phase5.reduceResistance();
+console.log("\nQuinta y última fase del hongo Cordyceps completada.\n");
