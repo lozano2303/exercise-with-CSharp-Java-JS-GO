@@ -1,20 +1,20 @@
 package models;
 
-// Abstracción: clase base que define comportamiento común
+//abstraccion
 public abstract class Cordyceps {
-    // Encapsulamiento: atributo privado
+    //encapsulamiento con atributo privado
     private String origin;
 
-    // Constructor
+    //constructor
     public Cordyceps(String origin) {
         this.origin = origin;
     }
 
-    // Método sin retorno
+    //metodo sin retorno
     public void spread() {
         System.out.println("El hongo se propaga desde: " + origin);
     }
 
-    // Método con retorno (abstracto - polimorfismo)
+    // metodo con retorno para polimorfismo
     public abstract String behavior();
 }

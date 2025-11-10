@@ -1,31 +1,31 @@
 package models;
 public class RecentlyInfected extends Cordyceps {
-    // Atributo privado
+    //atributo privado
     private int hours;
 
-    // Constructor
+    //constructor
     public RecentlyInfected(String origin) {
         super(origin);
         this.hours = 2;
     }
 
-    // Método con retorno
+    //metodo con retorno (polimorfismo)
     @Override
     public String behavior() {
         return "En esta fase todavía es humano, esta es la primera etapa de la infeccion.";
     }
 
-    // Método sin retorno
+    //metodo sin retorno
     public void showHours() {
         System.out.println("Horas desde el contacto: " + hours + "horas. Esta fase puede durar de uno a dos dias, dependiendo de la persona infectada.");
     }
 
-    // Función con retorno
+    //funcion con retorno
     public int getHours() {
         return hours;
     }
 
-    // Función sin retorno
+    //funcion sin retorno
     public void resetHours() {
         hours = 0;
     }

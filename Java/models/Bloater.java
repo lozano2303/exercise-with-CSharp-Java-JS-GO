@@ -1,32 +1,32 @@
 package models;
 
 public class Bloater extends Cordyceps {
-    // Atributo privado
+    //atributo privado
     private int resistance;
 
-    // Constructor
+    // constructor
     public Bloater(String origin) {
         super(origin);
         this.resistance = 100;
     }
 
-    // Método con retorno
+    //metodo con retorno
     @Override
     public String behavior() {
         return "ultima fase del cordyceps, en esta fase lanza esporas y es muy difícil de eliminar.\nConsejo: evita el enfrentamiento directo y usa un lanzallamas.";
     }
 
-    // Método sin retorno
+    // metodo sin retorno
     public void showResistance() {
         System.out.println("Resistencia: " + resistance);
     }
 
-    // Función con retorno
+    // funcion con retorno
     public int getResistance() {
         return resistance;
     }
 
-    // Función sin retorno
+    //fuuncion sin retorno
     public void reduceResistance() {
         resistance -= 10;
     }

@@ -2,6 +2,8 @@ import models.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        //instaciacion
         System.out.println("Simulación de Cordyceps \n\nFase 1: Recently Infected (infectado reciente)\n");
         RecentlyInfected phase1 = new RecentlyInfected("Boston");
         phase1.spread();
