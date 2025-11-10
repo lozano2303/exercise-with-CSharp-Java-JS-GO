@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hermes\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj": {}
+    "C:\\Users\\Aprendiz\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hermes\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj": {
+    "C:\\Users\\Aprendiz\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hermes\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj",
         "projectName": "CSharp",
-        "projectPath": "C:\\Users\\Hermes\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj",
-        "packagesPath": "C:\\Users\\Hermes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hermes\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\obj\\",
+        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\CSharp.csproj",
+        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\exercise-with-CSharp-Java-JS-GO\\CSharp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hermes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -4,6 +4,8 @@ import Stalker from './models/Stalker.js';
 import Clicker from './models/Clicker.js';
 import Bloater from './models/Bloater.js';
 
+//Instaciacion
+
 console.log("Simulación de Cordyceps \n\nFase 1: Recently Infected (infectado reciente)\n");
 const phase1 = new RecentlyInfected("Boston");
 phase1.spread();
