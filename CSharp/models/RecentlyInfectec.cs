@@ -4,34 +4,34 @@ namespace models
 {
     public class RecentlyInfected : Cordyceps
     {
-        // Atributo privado
+        // atributo privado
         private int hours;
 
-        // Constructor
+        //constructor
         public RecentlyInfected(string origin) : base(origin)
         {
             hours = 2;
         }
 
-        // Método con retorno
+        // metodo con retorno
         public override string Behavior()
         {
             return "En esta fase todavía es humano, esta es la primera etapa de la infeccion.";
         }
 
-        // Método sin retorno
+        //metodo sin retorno
         public void ShowHours()
         {
             Console.WriteLine("Horas desde el contacto: " + hours + "horas. Esta fase puede durar de uno a dos dias, dependiendo de la persona infectada.");
         }
 
-        // Función con retorno
+        // funcion con retorno
         public int GetHours()
         {
             return hours;
         }
 
-        // Función sin retorno
+        // funcion sin retorno
         public void ResetHours()
         {
             hours = 0;

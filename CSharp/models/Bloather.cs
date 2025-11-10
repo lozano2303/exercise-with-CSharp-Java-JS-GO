@@ -4,34 +4,34 @@ namespace models
 {
     public class Bloater : Cordyceps
     {
-        // Atributo privado
+        //atributo privado
         private int resistance;
 
-        // Constructor
+        // constructor
         public Bloater(string origin) : base(origin)
         {
             resistance = 100;
         }
 
-        // Método con retorno
+        //metodo con retorno
         public override string Behavior()
         {
             return "ultima fase del cordyceps, en esta fase lanza esporas y es muy difícil de eliminar.\nConsejo: evita el enfrentamiento directo y usa un lanzallamas.";
         }
 
-        // Método sin retorno
+        // metodo sin retorno
         public void ShowResistance()
         {
             Console.WriteLine("Resistencia: " + resistance);
         }
 
-        // Función con retorno
+        // funcion con retorno
         public int GetResistance()
         {
             return resistance;
         }
 
-        // Función sin retorno
+        // funcion sin retorno
         public void ReduceResistance()
         {
             resistance -= 10;

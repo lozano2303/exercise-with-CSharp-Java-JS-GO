@@ -4,34 +4,34 @@ namespace models
 {
     public class Runner : Cordyceps
     {
-        // Atributo interno
+        //atributo interno
         internal bool aggressive;
 
-        // Constructor
+        // constructor
         public Runner(string origin) : base(origin)
         {
             aggressive = true;
         }
 
-        // Método con retorno
+        //metodo con retorno
         public override string Behavior()
         {
             return "En esta etapa del Cordyceps el infectado corre rápido y ataca sin pensar a lo primero que ve.";
         }
 
-        // Método sin retorno
+        // metodo sin retorno
         public void ShowAggression()
         {
             Console.WriteLine("Esta etapa es agresiva?: " + aggressive + ". Son faciles de abatir a mano limpia, pero peligrosos.");
         }
 
-        // Función con retorno
+        // funcion con retorno
         public bool IsAggressive()
         {
             return aggressive;
         }
 
-        // Función sin retorno
+        //funcion sin retorno
         public void CalmDown()
         {
             aggressive = false;

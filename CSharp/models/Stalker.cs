@@ -4,40 +4,40 @@ namespace models
 {
     public class Stalker : Cordyceps
     {
-        // Atributo protegido
+        // atributo protegido
         protected bool hidden;
 
-        // Constructor
+        //constructor
         public Stalker(string origin) : base(origin)
         {
             hidden = true;
         }
 
-        // Método con retorno
+        // metodo con retorno
         public override string Behavior()
         {
             return "En esta fase del cordyceps sigue siendo muy parecida a la anterior, pero en esta se oculta y ataca por sorpresa.";
         }
 
-        // Método sin retorno protegido
+        //metodo sin retorno protegido
         protected void Hide()
         {
             Console.WriteLine("El acechador se ha escondido. Cuidado al acercarse.");
         }
 
-        // Método sin retorno público que accede al protegido
+        // metodo sin retorno que accede al protegido
         public void ActivateStealth()
         {
             Hide();
         }
 
-        // Función con retorno
+        //funcion con retorno
         public bool IsHidden()
         {
             return hidden;
         }
 
-        // Función sin retorno
+        // funcion sin retorno
         public void Reveal()
         {
             hidden = false;

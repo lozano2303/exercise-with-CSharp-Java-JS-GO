@@ -4,34 +4,34 @@ namespace models
 {
     public class Clicker : Cordyceps
     {
-        // Atributo privado
+        // atributo privado
         private string sound;
 
-        // Constructor
+        //constructor
         public Clicker(string origin) : base(origin)
         {
             sound = "¡Click!";
         }
 
-        // Método con retorno
+        // metodo con retorno
         public override string Behavior()
         {
             return "En esta fase el hongo ha dejado ciego al infectado, usa ecolocalización para cazar.\nConsejo: no lo enfrentes a mano limpia, evita el enfrentamiento.";
         }
 
-        // Método sin retorno
+        //metodo sin retorno
         public void EmitSound()
         {
             Console.WriteLine("Sonido emitido: " + sound);
         }
 
-        // Función con retorno
+        //funcion con retorno
         public string GetSound()
         {
             return sound;
         }
 
-        // Función sin retorno
+        // funcion sin retorno
         public void ChangeSound(string newSound)
         {
             sound = newSound;

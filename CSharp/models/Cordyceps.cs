@@ -2,10 +2,10 @@ namespace models
 {
     public abstract class Cordyceps
     {
-        // Atributo privado no nulo
+        // atributo privado (no nulo)
         private string origin = "";
 
-        // Propiedad pública con validación
+        // propiedad publica 
         public string Origin
         {
             get { return origin; }
@@ -16,19 +16,19 @@ namespace models
             }
         }
 
-        // Constructor que asigna un valor válido
+        // constructor
         public Cordyceps(string origin)
         {
             Origin = origin;
         }
 
-        // Método sin retorno
+        // metodo sin retorno
         public void Spread()
         {
             Console.WriteLine("El hongo se propaga desde: " + Origin);
         }
 
-        // Método abstracto con retorno
+        //metodo polimorfico
         public abstract string Behavior();
     }
 }

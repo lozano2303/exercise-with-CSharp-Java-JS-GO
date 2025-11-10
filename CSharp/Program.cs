@@ -6,6 +6,8 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        //instanciacion
         Console.WriteLine("Simulación de Cordyceps \n \nFase 1: Recently Infected (infectado reciente) \n");
         RecentlyInfected phase1 = new RecentlyInfected("Boston");
         phase1.Spread();
